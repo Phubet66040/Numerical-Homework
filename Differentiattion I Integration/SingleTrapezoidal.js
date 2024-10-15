@@ -6,6 +6,6 @@ let func = (x)=>{//สู๖รอินทีเกรดในการบ้�
 
 }
 
-let I = ((last-first)/2)*(func(first)+func(last));
+let I = ((last-first)/2)*(func(first)+func(last));//เอามาจาก I =b-a/2 * f(x0)+f(x1)
 
 console.log("is : "+I);
