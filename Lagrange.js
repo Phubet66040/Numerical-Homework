@@ -2,7 +2,7 @@ const math = require('mathjs');
 
 let x = [0,20000,40000,60000,80000];//linear [0,80000];  quadtatic : [0,40000,80000];  polynomail: [0,20000,40000,60000,80000];
 let y = [9.81,9.7487,9.6879,9.6879,9.5682];//linear [9.81,9.5682];  quadtatic : [9.81,9.6879,9.5682];  polynomail: [9.81,9.7487,9.6879,9.6879,9.5682];
-let z = new Array(x.length).fill(0);
+let z = [];//make array empty
 let value = 42000;
 let aws = 0;
 
