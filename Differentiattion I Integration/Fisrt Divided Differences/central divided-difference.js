@@ -7,20 +7,20 @@ let func = (x)=>{
    return  math.pow(Math.E,x);
 }
 let dif = (x)=>{
-    return (func(x+h)-func(x)) /h;
+    return (func(x+h)-func(x-h)) /(2 * h);
 }
 let diff = (x)=>{
-    return  (func(x + h*2) - 2*func(x + h) + func(x)) / math.pow(h, 2);
+    return  (func(x + h) - 2*func(x) + func(x-h)) / math.pow(h, 2);
 }
 let difff =(x)=>{
-    return (func(x + h*3) - 3*func(x + h*2) + 
-    3*func(x + h) - func(x)) / math.pow(h, 3);
+    return (func(x + h) - 2*func(x + h) + 
+    2*func(x - h) - func(x-h*2)) / math.pow(h, 3);
 }
 let diffff = (x)=>{
     return ( 
-        (func( x + h * 4 )- 4 * func(x + h*3)+
-        6*func(x+h*2) - 4 * func( x + h ) +
-        func(x))/math.pow(h,4)
+        (func( x + h * 2 )- 4 * func(x + h)+
+        6*func(x) - 4 * func( x - h ) +
+        func(x-h * 2))/math.pow(h,4)
         );
 }
 
